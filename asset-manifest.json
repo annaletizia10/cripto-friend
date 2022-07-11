@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cripto-friend/static/css/main.80912392.css",
+    "main.js": "/cripto-friend/static/js/main.cbe7baa3.js",
+    "index.html": "/cripto-friend/index.html",
+    "main.80912392.css.map": "/cripto-friend/static/css/main.80912392.css.map",
+    "main.cbe7baa3.js.map": "/cripto-friend/static/js/main.cbe7baa3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80912392.css",
+    "static/js/main.cbe7baa3.js"
+  ]
+}
