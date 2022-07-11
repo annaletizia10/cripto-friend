@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap");
+@import url("https://kit.fontawesome.com/1f5f16b487.js");
+
+
+body { 
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: poppins;
+    background-color: #efd6ac;
+    color: #04151f;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+button {
+    margin-top: 0.5em; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #04151f;
+    color: #da9056;
+    padding: .5rem 1.5rem ;
+}
+
+.light{
+    font-weight: 300;
+}
+
+.welcome-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome--title{
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+}
+
+.welcome--subtitle{
+    margin-top: 0.25rem;
+    margin-bottom: rem;
+    font-weight: 300;
+}
+
+.accent{
+    font-weight: bold;
+    position: relative;
+}
+
+.accent:before {
+    position: absolute;
+    content: '';
+    height: .3em;
+    width: 90%;
+    bottom: .2em;
+    z-index: -1;
+    background: #c44900; 
+}
+
+form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;  
+    background: #da9056;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+label{
+    margin-top: 0.65rem;
+    margin-bottom: 0.25rem;
+}
+
+.form--input{
+    border-radius: 5px; 
+    padding: 0.3rem;
+}
+
+.error {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #efd6ac;
+}
+
+button {
+    width: 65%;
+    margin: 0.8rem 2.5rem;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background-color: #04151f;
+    color: #da9056;
+    
+}
+
+button:hover{
+    background-color: #efd6ac;
+    color: #04151f;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px black;
+}
+
+button:focus{
+    background-color: #efd6ac;
+    color: #04151f;
+    box-shadow: 2px 2px 1px black;
+}
+
+a{
+    color: #da9056;
+    text-decoration: none;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #efd6ac;
+}
+
+a:focus{
+    color: #efd6ac;
+}
+
+.container{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.crypto-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 80%;
+    margin: 1.1rem auto;
+}
+
+.crypto-coin{
+    letter-spacing: 0.5px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0.8rem 0;
+    color: #04151f;
+}
+
+.arrow-up{
+    color: #214F4B;
+}
+
+.arrow-down{
+    color: #671717;
+}
+
+.recent-price {
+    /*background: radial-gradient(circle, rgba(196,73,0,1) 65%, rgba(239,214,172,1) 100%);*/
+    background:rgba(218,144,86);
+    margin: 0;
+    padding: 0.35rem 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.crypto-info{
+    /*background: radial-gradient(circle, rgba(218,144,86,1) 65%, rgba(239,214,172,1) 100%);*/
+    background:rgba(244, 227, 197);
+    margin: 0;
+    padding: 0.35rem 0;
+}
+
+.crypto-info:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.info-container{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.info-container p{
+    font-size: .75rem;
+}
+
+@media (min-width: 550px){
+    .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 550px;
+    margin: 2.5rem auto;
+}
+    .crypto-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    min-width: 30%;
+}
+    
+}
