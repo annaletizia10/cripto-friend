@@ -62,7 +62,7 @@ export default function App(){
     return (
         <div>
             <Routes>
-                <Route exact path="/cripto-friend/" element={
+                <Route exact path="/crypto-friend/" element={
                     <Welcome 
                         handleChange={handleChange}
                         formData={formData}
