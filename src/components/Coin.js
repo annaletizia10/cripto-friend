@@ -26,10 +26,10 @@ export default function Coin({name, price}){
                         </React.Fragment> : 
                     "Loading..."}
                 </h3>
-                <p className="crypto-info">{ price[1] ? price[1][name] : null}</p>
-                <p className="crypto-info">{ price[2] ? price[2][name] : null}</p>
-                <p className="crypto-info">{ price[3] ? price[3][name] : null}</p>
-                <p className="crypto-info">{ price[4] ? price[4][name] : null}</p>      
+                <p className="crypto-info">{ price[1] ? price[1][name] : ""}</p>
+                <p className="crypto-info">{ price[2] ? price[2][name] : ""}</p>
+                <p className="crypto-info">{ price[3] ? price[3][name] : ""}</p>
+                <p className="crypto-info">{ price[4] ? price[4][name] : ""}</p>      
             </div>
     )
 }
