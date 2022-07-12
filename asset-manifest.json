@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cripto-friend/static/css/main.80912392.css",
-    "main.js": "/cripto-friend/static/js/main.2e27173e.js",
+    "main.js": "/cripto-friend/static/js/main.7dce9093.js",
     "index.html": "/cripto-friend/index.html",
     "main.80912392.css.map": "/cripto-friend/static/css/main.80912392.css.map",
-    "main.2e27173e.js.map": "/cripto-friend/static/js/main.2e27173e.js.map"
+    "main.7dce9093.js.map": "/cripto-friend/static/js/main.7dce9093.js.map"
   },
   "entrypoints": [
     "static/css/main.80912392.css",
-    "static/js/main.2e27173e.js"
+    "static/js/main.7dce9093.js"
   ]
 }
