@@ -70,7 +70,7 @@ export default function App(){
                         formErrors={formErrors}
                         success={success}
                     />} />
-                <Route path="/crypto-friend/dashboard" element={
+                <Route path="crypto-friend/dashboard" element={
                     <Dashboard
                         userData={formData}
                         cryptoData={cryptoData}
