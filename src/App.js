@@ -17,6 +17,7 @@ export default function App(){
     const [isSubmited, setIsSubmited] = React.useState(false)
     const [cryptoData, setCryptoData] = React.useState([])
     const [success, setSuccess] = React.useState(false)
+    let newestPrice = {}
     
     function handleChange(event){
         const {name, value} = event.target
@@ -41,23 +42,23 @@ export default function App(){
         }
     },[formErrors])
 
-    //The information will be fetch every 20 seconds
+    //The information will be fetch every 15 seconds
     
     React.useEffect(()=>{
-       setTimeout(() => {
+       setInterval(() => {
            fetch("https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,XRP&tsyms=USD")
             .then(res => res.json())
             .then(data => {
-                    const newestPrice =  {
+                    newestPrice =  {
                         bitcoin: data.BTC.USD,
                         ethereum: data.ETH.USD,
                         ripple: data.XRP.USD         
-            }
-                    setCryptoData(prevData => [newestPrice, ...prevData])
+            }        
+            setCryptoData(prevData => [newestPrice, ...prevData])
                 
         })
-       }, 20000)
-    })
+       }, 15000)
+    }, [])
 
     return (
         <div>

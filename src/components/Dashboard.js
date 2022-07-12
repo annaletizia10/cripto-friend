@@ -2,7 +2,7 @@ import React from "react"
 import Coin from "./Coin"
 import Header from "./Header"
 
-export default function Dashboard({userData, cryptoData}){    
+export default function Dashboard({userData, cryptoData}){
     return(
         <div>
             <Header
@@ -24,7 +24,7 @@ export default function Dashboard({userData, cryptoData}){
                     />    
                 </div>
                 <div className="info-container">
-                    <p>*Prices are updated every 20 seconds in USD</p>
+                    <p>*Prices are updated every 15 seconds in USD</p>
                 </div>
             </main>
         </div>

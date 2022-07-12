@@ -8,14 +8,14 @@ export default function Coin({name, price}){
     const title = capitalize(name)
     let icon = ""
 
-        if(price[0] && price[1]){
-            if(price[0][name] > price[1][name]){
-                icon = <FontAwesomeIcon icon={faArrowUp} className="arrow-up"></FontAwesomeIcon>
-            }else if(price[0][name] < price[1][name]){
-                icon = <FontAwesomeIcon icon={faArrowDown} className="arrow-down"></FontAwesomeIcon>
-            }
+    if(price[0] && price[1]){
+        if(price[0][name] > price[1][name]){
+            icon = <FontAwesomeIcon icon={faArrowUp} className="arrow-up"></FontAwesomeIcon>
+        }else if(price[0][name] < price[1][name]){
+            icon = <FontAwesomeIcon icon={faArrowDown} className="arrow-down"></FontAwesomeIcon>
+        }
     }
-    
+
     return(
             <div className="crypto-container">
                 <h2 className="crypto-coin">{title}</h2>
