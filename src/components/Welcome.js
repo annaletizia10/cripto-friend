@@ -50,7 +50,7 @@ export default function Welcome(props){
                     className="form--input"
                 />
                 {errors.phone && <p className="error">{errors.phone}</p>}
-                <button>{props.success ? <Link to="/dashboard">Go to Dashboard</Link> : "Submit" }</button>
+                <button>{props.success ? <Link to="/cripto-friend/dashboard">Go to Dashboard</Link> : "Submit" }</button>
             </form>
         </div>
     )
