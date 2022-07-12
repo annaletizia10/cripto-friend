@@ -62,7 +62,7 @@ export default function App(){
     return (
         <div>
             <Routes>
-                <Route exact path="/cripto-friend" element={
+                <Route exact path="/cripto-friend/" element={
                     <Welcome 
                         handleChange={handleChange}
                         formData={formData}
@@ -70,7 +70,7 @@ export default function App(){
                         formErrors={formErrors}
                         success={success}
                     />} />
-                <Route path="cripto-friend/dashboard" element={
+                <Route path="/cripto-friend/dashboard" element={
                     <Dashboard
                         userData={formData}
                         cryptoData={cryptoData}
