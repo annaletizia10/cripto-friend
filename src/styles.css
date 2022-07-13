@@ -16,17 +16,13 @@ h1 {
     margin-top: 0;
 }
 
-button {
-    margin-top: 0.5em; 
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     background-color: #04151f;
     color: #da9056;
-    padding: .5rem 1.5rem ;
+    padding: .5rem 2.5rem ;
 }
 
 .light{
@@ -40,7 +36,7 @@ header {
 }
 
 .welcome--title{
-    margin-top: 2.5rem;
+    margin-top: 4.5rem;
     margin-bottom: 0;
 }
 
@@ -69,7 +65,7 @@ form{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    max-width: 250px;  
+    max-width: 400px;  
     background: #da9056;
     padding: 1em;
     border-radius: 1em;
@@ -94,14 +90,13 @@ label{
 
 button {
     width: 65%;
-    margin: 0.8rem 2.5rem;
+    margin: 1rem auto;
     border-radius: 20px;
     border: none;
     padding: 0.5rem 1rem;
     font-weight: bold;
     background-color: #04151f;
     color: #da9056;
-    
 }
 
 button:hover{
@@ -167,7 +162,6 @@ a:focus{
 }
 
 .recent-price {
-    /*background: radial-gradient(circle, rgba(196,73,0,1) 65%, rgba(239,214,172,1) 100%);*/
     background:rgba(218,144,86);
     margin: 0;
     padding: 0.35rem 0;
@@ -176,7 +170,6 @@ a:focus{
 }
 
 .crypto-info{
-    /*background: radial-gradient(circle, rgba(218,144,86,1) 65%, rgba(239,214,172,1) 100%);*/
     background:rgba(244, 227, 197);
     margin: 0;
     padding: 0.35rem 0;
@@ -203,13 +196,47 @@ a:focus{
     flex-direction: row;
     justify-content: space-between;
     max-width: 550px;
-    margin: 2.5rem auto;
+    margin: 3.5rem auto;
 }
     .crypto-container{
     display: flex;
     flex-direction: column;
     margin: 1rem;
     min-width: 30%;
+}  
 }
-    
+
+@media (min-width: 900px){
+    header {
+    justify-content: space-between;
+    padding: .5rem 3.5rem ;
+    font-size: 1.25rem;
+    }
+    .welcome--title{
+    font-size: 2.5rem;
+    }
+    .welcome--subtitle{
+    font-size: 1.7rem;
+    }
+    form{
+    width: 20%;
+    }
+    .container{
+    max-width: 800px;
+    margin: 5.5rem auto;
+    }
+    .crypto-coin{
+    font-size: 2rem;
+    }
+    .crypto-container{
+    font-size: 1rem;
+    min-width: 27%;
+    }
+    .recent-price, .crypto-info{
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    }
+    .info-container p{
+    font-size: 1rem;
+}   
 }
